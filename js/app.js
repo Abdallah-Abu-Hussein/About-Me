@@ -2,19 +2,19 @@
 
 let name = prompt('What\'s Your Name');
 
-let lovingsummer = prompt('Do you think I love summer, type y(yes)/n(no)');
+let lovingsummer = prompt('Do you think I love summer ?, type y(yes)/n(no)');
 lovingsummer.toLowerCase();
-alert( lovingsummer === 'y' ? "WE ARE burnnig here how could anyone tolerate summer": "Your right the sun is going to kill me,Can't wait for winter !!!!");
+alert( lovingsummer === 'y' ? "WE are burnnig here, how could anyone tolerate summer": "Your right the sun is going to kill me,Can't wait for winter !!!!");
 
-let favfood = prompt('Is jordanin Food my favorite food , type y(yes)/n(no)');
+let favfood = prompt('Is jordanin Food my favorite food ? , type y(yes)/n(no)');
 favfood.toLowerCase();
 alert( favfood === 'y' ? "You are right I would not stay here if it wasn't for the food": "WRONG, I like the food here!");
 
-let lovingSports = prompt('Do you think I like sports ??, type y(yes)/n(no)');
+let lovingSports = prompt('Do you think I like sports ?, type y(yes)/n(no)');
 lovingSports.toLowerCase();
 alert( lovingSports === 'y' ? "You are right": "WRONG, I love sports, we can't be healthy without it!" );
 
-let goodCoder = prompt('Do Think am a good coder');
+let goodCoder = prompt('Do Think am a good coder ?');
 goodCoder.toLowerCase();
 alert( goodCoder === 'y' ? "Thinks a lot": "I appreciate your honesty ");
 
