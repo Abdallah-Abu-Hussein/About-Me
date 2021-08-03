@@ -5,7 +5,7 @@ body header h1 {
     position: relative;
     padding-bottom: 100;
     animation-name: example;
-    animation-duration: 40s;
+    animation-duration: 60s;
 }
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}

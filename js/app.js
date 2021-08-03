@@ -62,7 +62,7 @@ while (counter <= 4) {
 
 }
 alert('the number was ' + rand_number);
-let what_is_Myfav = prompt('What is My favorite fast food chain ? , you have 6 attempts');
+let what_is_Myfav = prompt('What is My favorite fast food chain ? , you have 6 attempts, hint Subway');
 
 let fav_chains = ['Subway', 'McDonald', 'Pizza_Hut', 'Taco_Bell'];
 
