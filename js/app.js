@@ -4,86 +4,111 @@
 let score = 0;
 let name = prompt('What\'s Your Name');
 
-let lovingsummer = prompt('Do you think I love summer ?, type y(yes)/n(no)');
-lovingsummer.toLowerCase();
-alert(lovingsummer === 'y' ? 'WE are burnnig here, how could anyone tolerate summer' : 'Your right the sun is going to kill me,Can\'t wait for winter !!!!');
 
-if(lovingsummer === 'y'){
-  score++;
+function q1 (){
+  let lovingsummer = prompt('Do you think I love summer ?, type y(yes)/n(no)');
+  lovingsummer.toLowerCase();
+  alert(lovingsummer === 'y' ? 'WE are burnnig here, how could anyone tolerate summer' : 'Your right the sun is going to kill me,Can\'t wait for winter !!!!');
+
+  if(lovingsummer === 'y'){
+    score++;
+  }
 }
+q1();
 
-let favfood = prompt('Is jordanin Food my favorite food ? , type y(yes)/n(no)');
-favfood.toLowerCase();
-alert(favfood === 'y' ? 'You are right I would not stay here if it wasn\'t for the food' : 'WRONG, I like the food here!');
-if(lovingsummer === 'y'){
-  score++;
+
+function q2 (){
+  let favfood = prompt('Is jordanin Food my favorite food ? , type y(yes)/n(no)');
+  favfood.toLowerCase();
+  alert(favfood === 'y' ? 'You are right I would not stay here if it wasn\'t for the food' : 'WRONG, I like the food here!');
+  if(favfood === 'y'){
+    score++;
+  }
 }
+q2();
 
-let lovingSports = prompt('Do you think I like sports ?, type y(yes)/n(no)');
-lovingSports.toLowerCase();
-alert(lovingSports === 'y' ? 'You are right' : 'WRONG, I love sports, we can\'t be healthy without it!');
+function q3 (){
+  let lovingSports = prompt('Do you think I like sports ?, type y(yes)/n(no)');
+  lovingSports.toLowerCase();
+  alert(lovingSports === 'y' ? 'You are right' : 'WRONG, I love sports, we can\'t be healthy without it!');
 
-if(lovingSports === 'y'){
-  score++;
+  if(lovingSports === 'y'){
+    score++;
+
+  }
 }
+q3();
 
-let goodCoder = prompt('Do Think am a good coder ?');
-goodCoder.toLowerCase();
-alert(goodCoder === 'y' ? 'Thinks a lot' : 'I appreciate your honesty ');
+function q4(){
+  let goodCoder = prompt('Do Think am a good coder ?');
+  goodCoder.toLowerCase();
+  alert(goodCoder === 'y' ? 'Thinks a lot' : 'I appreciate your honesty ');
 
-if(goodCoder === 'y'){
-  score++;
+  if(goodCoder === 'y'){
+    score++;
+  }
 }
+q4();
 // Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 // Indicates through an alert if the guess is “too high” or “too low”.
 // It should give the user exactly four opportunities to get the correct answer.
 // After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
 
-let guessedNumber = prompt('guess a number , you have 4 attempts ;)');
-let rand_number = Math.floor( Math.random() * 11);
-console.log(rand_number);
-let counter = 0;
 
-while (counter <= 4) {
-  if (guessedNumber == rand_number) {
-    alert('nice, correct answer (:');
-    score++;
-    break;
-  } else if (guessedNumber < rand_number) {
-    alert('too low');
-    counter++;
-    guessedNumber = prompt('guess a number ...?');
+function q5(){
+  let guessedNumber = prompt('guess a number , you have 4 attempts ;)');
+  let rand_number = Math.floor( Math.random() * 11);
+  console.log(rand_number);
+  let counter = 0;
 
-  } else if (guessedNumber > rand_number) {
-    alert('too high');
-    counter++;
-    guessedNumber = prompt('guess a number ...?');
-  }
-
-}
-alert('the number was ' + rand_number);
-let what_is_Myfav = prompt('What is My favorite fast food chain ? , you have 6 attempts, hint Subway');
-
-let fav_chains = ['Subway', 'McDonald', 'Pizza_Hut', 'Taco_Bell'];
-
-for (let i = 0; i < 6; i++) {
-  for (var j = 0; j < fav_chains.length; j++) {
-
-    if (what_is_Myfav == fav_chains[j]) { alert('yes I love this restaurant');
+  while (counter <= 4) {
+    if (guessedNumber == rand_number) {
+      alert('nice, correct answer (:');
       score++;
       break;
+    } else if (guessedNumber < rand_number) {
+      alert('too low');
+      counter++;
+      guessedNumber = prompt('guess a number ...?');
+
+    } else if (guessedNumber > rand_number) {
+      alert('too high');
+      counter++;
+      guessedNumber = prompt('guess a number ...?');
     }
 
-  } if (what_is_Myfav == fav_chains[j]) {
-    break;
-  }else
-  {
-    alert('Sorry wrong answer, try again');}
-  what_is_Myfav = prompt('What is My favorite fast food chain ? ');
-
+  }
+  alert('the number was ' + rand_number);
 }
-alert('My favorite chains are ,Subway ,McDonald ,Pizza_Hut ,Taco_Bell');
 
+q5();
+
+
+function q6(){
+
+  let what_is_Myfav = prompt('What is My favorite fast food chain ? , you have 6 attempts, hint Subway');
+
+  let fav_chains = ['Subway', 'McDonald', 'Pizza_Hut', 'Taco_Bell'];
+
+  for (let i = 0; i < 6; i++) {
+    for (var j = 0; j < fav_chains.length; j++) {
+
+      if (what_is_Myfav == fav_chains[j]) { alert('yes I love this restaurant');
+        score++;
+        break;
+      }
+
+    } if (what_is_Myfav == fav_chains[j]) {
+      break;
+    }else
+    {
+      alert('Sorry wrong answer, try again');}
+    what_is_Myfav = prompt('What is My favorite fast food chain ? ');
+
+  }
+  alert('My favorite chains are ,Subway ,McDonald ,Pizza_Hut ,Taco_Bell');
+}
+q6();
 
 alert('Nice to meet you ! ' + name + ' your score is = ' + score);
 
